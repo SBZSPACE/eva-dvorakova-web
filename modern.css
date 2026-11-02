@@ -4,6 +4,7 @@ body.modern-site:before{display:none}
 body.modern-site .shell{width:min(1240px,calc(100% - 112px));margin-inline:auto}
 body.modern-site main{position:relative}
 body.modern-site :is(a,button,input,select,textarea,summary):focus-visible{outline:2px solid #233f91;outline-offset:4px}
+body.modern-site :is(main,h1)[tabindex="-1"]:focus{outline:none}
 body.modern-site .site-header{position:relative;top:auto;z-index:40;margin-block:0;padding:0;pointer-events:auto;background:transparent}
 body.modern-site .header-row{height:102px;width:100%;padding:0;border:0;border-bottom:1px solid #252b361c;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none;display:flex;align-items:center;justify-content:space-between;gap:28px}
 body.modern-site .brand{min-width:0;padding:10px 0;gap:0;white-space:nowrap}
