@@ -1,0 +1,6 @@
+/* Keep each booking step and its controls inside the card on all screen sizes. */
+body.modern-site main:not(.mh-home):not(:has(#admin-host)) .booking-panel{min-width:0;padding:28px}
+body.modern-site main:not(.mh-home):not(:has(#admin-host)) .booking-progress{width:100%;min-width:0}
+body.modern-site main:not(.mh-home):not(:has(#admin-host)) .booking-progress li{min-width:0}
+body.modern-site main:not(.mh-home):not(:has(#admin-host)) .booking-progress li:last-child{flex:0 0 auto}
+@media(max-width:760px){body.modern-site main:not(.mh-home):not(:has(#admin-host)) .booking-panel{padding:20px 16px}body.modern-site main:not(.mh-home):not(:has(#admin-host)) .booking-progress li:last-child{flex:1}}
