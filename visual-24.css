@@ -1,0 +1,26 @@
+/* Illustrated accents use the existing artwork and leave the child's portrait intact. */
+body.modern-site .mh-source-grid article,body.modern-site .mh-source-grid article:first-child{grid-template-columns:104px minmax(0,1fr);column-gap:22px;align-items:center;padding:13px 20px 13px 13px;min-height:130px}
+body.modern-site .mh-source-grid article .mh-tile-art{grid-column:1;grid-row:1 / span 2;display:grid;place-items:center;width:104px;height:104px;overflow:hidden;border-radius:18px;padding:8px;background:linear-gradient(145deg,#e5effd,#c8d5f4);box-shadow:inset 0 1px 2px #fff9}
+body.modern-site .mh-source-grid .mh-tile-art img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 5px 5px #35446825)}
+body.modern-site .mh-source-grid article .mh-tile-goose{background:linear-gradient(145deg,#f4eafd,#e0d5f4)}
+body.modern-site .mh-source-grid article .mh-tile-car{background-image:url('/eva-dvorakova-web/assets/illustrations/auticka/atlas-1.png');background-size:200% 400%;background-position:0 0;background-repeat:no-repeat}
+body.modern-site .mh-source-grid article :is(h3,a){grid-column:2}
+body.modern-site .mh-source-grid article h3{align-self:end}
+body.modern-site .mh-source-grid article .mh-open-app{align-self:start;margin-top:0}
+body.modern-site .mh-source-grid article:not(:last-child) h3{align-self:center}
+body.modern-site .fa-stage{position:relative;width:min(100%,320px);margin:0 auto 16px}
+body.modern-site .fa-stage .fa-portrait{position:relative;z-index:1;margin:0 auto;width:min(190px,48vw);transform:rotate(-2deg);box-shadow:0 18px 40px #596fb83a}
+body.modern-site .fa-friend{position:absolute;z-index:2;display:grid;place-items:center;width:66px;height:66px;padding:8px;border:1px solid #fff;border-radius:22px;background:#ffffffcf;box-shadow:0 12px 25px #6e74ac25;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+body.modern-site .fa-friend img{width:100%;height:100%;object-fit:contain}
+body.modern-site .fa-friend-owl{left:0;bottom:8px;transform:rotate(-9deg)}
+body.modern-site .fa-friend-goose{right:0;top:16px;transform:rotate(9deg)}
+body.modern-site .fa-sparkle{position:absolute;color:#a48ddd;font-size:24px;line-height:1}
+body.modern-site .fa-sparkle-one{left:30px;top:10px}.modern-site .fa-sparkle-two{right:33px;bottom:13px;color:#7d9fe7;font-size:17px}
+body.modern-site .fa-progress{height:6px;width:min(100%,420px);margin:0 auto 15px;overflow:hidden;border-radius:99px;background:#d9dff2}
+body.modern-site .fa-progress span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#8f88e4,#4167c7);transition:width .25s ease}
+body.modern-site .fa-animals button:first-child{background:linear-gradient(145deg,#fff,#e6eafb)}
+body.modern-site .fa-animals button:last-child{background:linear-gradient(145deg,#fff,#e5f4ed)}
+body.modern-site .fa-animals img{filter:drop-shadow(0 8px 7px #52648122)}
+@media(max-width:760px){body.modern-site .mh-source-grid article,body.modern-site .mh-source-grid article:first-child{grid-template-columns:82px minmax(0,1fr);gap:0 16px;padding:10px;min-height:102px}body.modern-site .mh-source-grid article .mh-tile-art{width:82px;height:82px;border-radius:15px}body.modern-site .mh-source-grid article :is(h3,a){grid-column:2}}
+@media(max-width:360px){body.modern-site .fa-stage{width:min(100%,270px)}body.modern-site .fa-stage .fa-portrait{width:155px}body.modern-site .fa-friend{width:54px;height:54px;border-radius:18px}}
+@media(prefers-reduced-motion:reduce){body.modern-site .fa-progress span{transition:none}}
