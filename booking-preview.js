@@ -1,4 +1,4 @@
-import {pageHref} from './pages-router.js?v=pages-1';
+import {pageHref} from './pages-router.js?v=eva-notes-13';
 /** Standalone public demonstration. No network calls or real personal data.
  * Storage is per-tab and contains only generated identifiers and sample times.
  * Availability is illustrative, never Eva's actual calendar. */
@@ -9,8 +9,8 @@ const NAME='Ukázkový rodič',EMAIL='ukazka@example.test';
 const UUID=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const clockParts=new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23',weekday:'short'});
 const timeLabel=new Intl.DateTimeFormat('cs-CZ',{timeZone:TZ,hour:'2-digit',minute:'2-digit'});
-const service={id:'intro',name:'Úvodní rozhovor s rodičem',description:'Ukázka online rezervace. Délku, cenu a skutečné termíny Eva potvrdí před spuštěním.',durationMinutes:30,priceLabel:'Bude doplněna',active:true,provisional:true};
-export const previewConfig={publicPreview:true,mode:'demo',demo:true,timezone:TZ,bookingUrl:'',services:[service],content:{heroTitle:'Podpora řeči podle potřeb dítěte.',heroIntro:'Nejprve rozhovor s rodiči. Potom setkání s dítětem a další kroky podle jeho potřeb.',profile:'Rozhovor s rodiči, poznání potřeb dítěte a individuální plán péče.',materials:'Materiály Evy Dvořákové.',contactEmail:''},settings:{timezone:TZ,minNoticeHours:24,maxAdvanceDays:60,slotStepMinutes:30,bufferMinutes:15,workingHours:{'1':[['09:00','12:00'],['14:00','17:00']],'2':[['09:00','12:00']],'3':[['14:00','18:00']],'4':[['09:00','12:00']],'5':[['09:00','12:00']]}},integrations:{google:{provider:'preview',connected:false,ready:false},email:{provider:'preview',enabled:false,ready:false}}};
+const service={id:'intro',name:'Úvodní telefonát s rodičem',description:'Úvodní telefonický rozhovor zdarma. Tato rezervace je pouze ukázková; skutečnou délku a termíny ještě potvrdíme.',durationMinutes:30,priceLabel:'Zdarma · pracovní návrh cen k potvrzení',active:true,provisional:true};
+export const previewConfig={publicPreview:true,mode:'demo',demo:true,timezone:TZ,bookingUrl:'',services:[service],content:{heroTitle:'Podpora řeči Vašeho dítěte.',heroIntro:'Nejprve rozhovor s rodiči. Potom setkání s dítětem a další kroky podle jeho potřeb.',profile:'Rozhovor s rodiči, poznání potřeb dítěte a individuální plán péče.',materials:'Vlastní nápady a pracovní listy.',contactEmail:''},settings:{timezone:TZ,minNoticeHours:24,maxAdvanceDays:60,slotStepMinutes:30,bufferMinutes:15,workingHours:{'1':[['09:00','12:00'],['14:00','17:00']],'2':[['09:00','12:00']],'3':[['14:00','18:00']],'4':[['09:00','12:00']],'5':[['09:00','12:00']]}},integrations:{google:{provider:'preview',connected:false,ready:false},email:{provider:'preview',enabled:false,ready:false}}};
 const copy=x=>JSON.parse(JSON.stringify(x));
 const fail=(status,code,message)=>{const e=new Error(message);e.status=status;e.code=code;throw e;};
 function parts(value){const p=Object.fromEntries(clockParts.formatToParts(new Date(value)).map(x=>[x.type,x.value]));return {date:`${p.year}-${p.month}-${p.day}`,year:+p.year,month:+p.month,day:+p.day,hour:+p.hour,minute:+p.minute,weekday:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday)};}
