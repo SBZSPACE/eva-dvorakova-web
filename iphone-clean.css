@@ -1,0 +1,50 @@
+/* Cleaner content and touch-friendly layouts for iPhone-sized screens. */
+body.modern-site{padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+body.modern-site .screen-reader-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+body.modern-site .mh-source-section>h2{grid-column:1;grid-row:1}
+body.modern-site .mh-source-grid{grid-column:2;grid-row:1 / span 5}
+body.modern-site .mh-source-grid article,body.modern-site .mh-source-grid article:first-child{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;padding:20px 22px}
+body.modern-site .mh-source-grid article :is(h3,p,a){grid-column:1}
+body.modern-site .mh-source-section>.mh-open-app{grid-column:1;grid-row:auto}
+body.modern-site .hero-kids{padding-bottom:9%!important}
+body.modern-site .journey-intro>.text-link{margin-bottom:26px}
+body.modern-site .journey-overview h2{margin-bottom:20px}
+body.modern-site .lesson-note,body.modern-site .journey-source{max-width:68ch}
+@media(max-width:760px){
+ body.modern-site .shell{width:calc(100% - 32px);max-width:100%}
+ body.modern-site .site-header{padding-top:10px}
+ body.modern-site .header-row{height:64px;gap:10px;padding-inline:16px;border-radius:20px}
+ body.modern-site .brand strong{font-size:clamp(18px,5vw,21px)}
+ body.modern-site .mobile-toggle{min-width:48px;min-height:48px}
+ body.modern-site .mobile-menu{max-width:100%;padding:12px 16px}
+ body.modern-site .mobile-menu a{min-height:48px;display:flex;align-items:center}
+ body.modern-site .mh-hero{padding-block:32px 42px;gap:24px}
+ body.modern-site .mh-display{font-size:clamp(36px,9vw,52px);overflow-wrap:anywhere}
+ body.modern-site .mh-lead{font-size:15px;line-height:1.6;margin:18px 0 22px}
+ body.modern-site .mh-actions{display:flex;flex-wrap:wrap;gap:8px 16px}
+ body.modern-site .mh-actions .mh-button{min-height:48px}
+ body.modern-site .mh-scene.hero-kids{padding:9% 7%;border-radius:26px}
+ body.modern-site .mh-app-grid{padding:26px 18px 30px;min-width:0}
+ body.modern-site .mh-app-copy h2{font-size:clamp(34px,8.5vw,46px);overflow-wrap:anywhere}
+ body.modern-site .mh-benefits{max-width:100%;gap:7px}
+ body.modern-site .mh-benefits button,body.modern-site .mh-benefits button.is-active,body.modern-site .mh-benefits button[aria-pressed=true]{min-height:44px;flex:0 1 auto}
+ body.modern-site .mh-device-wrap{width:min(100%,260px);max-width:260px}
+ body.modern-site .mh-app-options{max-width:100%;min-width:0}
+ body.modern-site .mh-customizer-disclosure>summary{min-height:52px}
+ body.modern-site .mh-gender button,body.modern-site .mh-swatches button{min-height:44px}
+ body.modern-site .mh-source-section{display:block;padding-block:36px 45px}
+ body.modern-site .mh-source-grid{margin:22px 0 16px}
+ body.modern-site .mh-source-grid article,body.modern-site .mh-source-grid article:first-child{grid-template-columns:minmax(0,1fr);padding:17px 19px}
+ body.modern-site .mh-source-grid article :is(h3,p,a){grid-column:1}
+ body.modern-site .mh-source-section>.mh-open-app{max-width:100%;white-space:normal}
+ body.modern-site .eva-pricing{padding:27px 20px;margin-bottom:38px}
+ body.modern-site .eva-price-grid article{padding-block:20px!important}
+ body.modern-site main:not(.mh-home):not(:has(#admin-host)) .subhero{padding:35px 0 38px}
+ body.modern-site main:not(.mh-home):not(:has(#admin-host)) .subhero h1{font-size:clamp(35px,9vw,50px);overflow-wrap:anywhere}
+ body.modern-site main:not(.mh-home):not(:has(#admin-host)) .topics-big{grid-template-columns:1fr}
+ body.modern-site :is(.journey-controls,.lesson-actions,.booking-controls){flex-wrap:wrap}
+ body.modern-site :is(.journey-controls .btn,.lesson-actions .btn){min-height:48px}
+ body.modern-site :is(input,textarea,select){font-size:16px}
+ body.modern-site .footer{padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))}
+}
+@media(max-width:360px){body.modern-site .mh-display{font-size:36px}body.modern-site .mh-app-grid{padding-inline:14px}body.modern-site .mh-device-wrap{width:min(100%,238px)}body.modern-site .mh-benefits button{font-size:10px;padding-inline:9px}body.modern-site .mh-swatches{grid-template-columns:repeat(2,minmax(0,1fr))}}
