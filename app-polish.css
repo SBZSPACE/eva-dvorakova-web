@@ -1,0 +1,41 @@
+/* Shared type, spacing and alignment for the application preview and activities. */
+body.modern-site :is(.mh-app-section,.lesson,.journey-page){font-family:Manrope,sans-serif;color:#1c2a48}
+body.modern-site .mh-app-grid{grid-template-columns:minmax(0,1fr) minmax(240px,300px);column-gap:clamp(30px,6vw,90px);justify-content:center}
+body.modern-site .mh-app-copy,body.modern-site .mh-app-options{width:100%;max-width:470px;justify-self:center}
+body.modern-site .mh-app-copy{align-self:end}
+body.modern-site .mh-app-options{align-self:start}
+body.modern-site .mh-app-copy h2{font-family:Manrope,sans-serif;letter-spacing:-.045em;line-height:1.12}
+body.modern-site .mh-benefits{align-items:stretch;gap:8px}
+body.modern-site .mh-benefits button,body.modern-site .mh-benefits button.is-active,body.modern-site .mh-benefits button[aria-pressed=true]{font:600 12px/1.35 Manrope,sans-serif;justify-content:center;min-height:44px}
+body.modern-site .mh-device-wrap{width:min(100%,275px);max-width:275px}
+body.modern-site .mh-device,body.modern-site .mh-device :is(button,p,span,h3){font-family:Manrope,sans-serif}
+body.modern-site .mh-device :is(button,p,span){letter-spacing:normal}
+body.modern-site .mh-device-top>span:first-child{font-family:Manrope,sans-serif;font-weight:650;letter-spacing:-.055em}
+body.modern-site .mh-preview-title{text-align:center;padding-inline:16px}
+body.modern-site .mh-preview-title h3{font-family:Manrope,sans-serif;font-weight:650;line-height:1.2;letter-spacing:-.035em!important;text-wrap:balance}
+body.modern-site .mh-portrait-img{object-position:50% 40%}
+body.modern-site .mh-screen-actions{align-items:center;justify-content:center;gap:2px}
+body.modern-site .mh-screen-actions .mh-play,body.modern-site .mh-preview-done .mh-play{font-family:Manrope,sans-serif;font-weight:650;border-radius:999px;min-height:44px;text-align:center}
+body.modern-site .mh-screen-text{font-family:Manrope,sans-serif;min-height:44px;text-align:center}
+body.modern-site .mh-preview-story,body.modern-site .mh-preview-done{font-family:Manrope,sans-serif;text-align:center}
+body.modern-site .mh-animal-choices button{border-radius:14px}
+body.modern-site .mh-customizer-disclosure>summary,body.modern-site .mh-customizer legend,body.modern-site .mh-customizer button{font-family:Manrope,sans-serif}
+body.modern-site .mh-gender button{justify-content:flex-start;text-align:left}
+body.modern-site .mh-gender button img{flex:none;object-fit:cover}
+body.modern-site .mh-swatches button{justify-content:flex-start;text-align:left}
+body.modern-site .mh-device-note{text-align:center}
+body.modern-site :is(.lesson h1,.lesson h2,.journey-page h1,.journey-page h2,.journey-page h3){font-family:Manrope,sans-serif;font-weight:650;letter-spacing:-.04em;line-height:1.2}
+body.modern-site :is(.lesson p,.lesson button,.lesson a,.journey-page p,.journey-page button,.journey-page a,.journey-page summary){font-family:Manrope,sans-serif}
+body.modern-site :is(.lesson-controls,.journey-controls){gap:12px}
+@media(max-width:760px){body.modern-site .mh-app-grid{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;row-gap:0}
+ body.modern-site .mh-app-copy{grid-column:1;grid-row:1;max-width:none}
+ body.modern-site .mh-device-wrap{grid-column:1;grid-row:2;width:min(100%,260px);max-width:260px}
+ body.modern-site .mh-app-options{grid-column:1;grid-row:3;max-width:none}
+ body.modern-site .mh-benefits{gap:7px;max-width:100%}
+ body.modern-site .mh-benefits button,body.modern-site .mh-benefits button.is-active,body.modern-site .mh-benefits button[aria-pressed=true]{font-size:11px;min-height:44px}
+ body.modern-site .mh-gender{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body.modern-site .mh-gender button{min-width:0;gap:8px;padding:8px}
+ body.modern-site .mh-gender button span{overflow-wrap:anywhere}
+ body.modern-site .journey-title-line{align-items:flex-start}
+}
+@media(max-width:360px){body.modern-site .mh-device-wrap{width:min(100%,238px);max-width:238px}body.modern-site .mh-gender button img{width:40px;height:40px}body.modern-site .mh-benefits button,body.modern-site .mh-benefits button.is-active{font-size:10px;padding-inline:9px}}
