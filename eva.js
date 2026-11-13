@@ -1,6 +1,6 @@
 import {routeURL,routeParams,pageHref,preparePageLinks} from './pages-router.js?v=eva-notes-13';
 import {runtime} from './runtime.js?v=eva-notes-13';
-import {renderModernHome,renderAppPreview,mountModernHome,renderPricing} from './modern-home.js?v=glass-15';
+import {renderModernHome,renderAppPreview,mountModernHome,renderPricing} from './modern-home.js?v=glass-16';
 import {renderLesson,mountLesson} from './lesson.js?v=lesson-14';
 import {renderJourney,mountJourney} from './journey.js?v=lesson-14';
 const site = document.querySelector('#site');

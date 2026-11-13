@@ -1,0 +1,32 @@
+/* Brighter, more distinct glass surfaces, while keeping text crisp. */
+body.modern-site{background:radial-gradient(ellipse at 0% 2%,#d5e3ff 0%,transparent 43%),radial-gradient(ellipse at 100% 14%,#e7d6fa 0%,transparent 40%),linear-gradient(165deg,#f6f8ff 0%,#f9f6f3 56%,#eaf1fc 100%);color:#17233b}
+body.modern-site .header-row{background:linear-gradient(130deg,#fffffff0,#f4f6ffca);border:1px solid #fff;box-shadow:0 12px 38px #333b801c,inset 0 1px 0 #fff;backdrop-filter:blur(28px) saturate(160%);-webkit-backdrop-filter:blur(28px) saturate(160%)}
+body.modern-site .desktop-nav{color:#263551;font-weight:600}
+body.modern-site .mh-hero{gap:clamp(35px,5vw,75px);min-height:625px;padding-block:64px 76px}
+body.modern-site .hero-kicker{display:inline-flex;align-items:center;gap:9px;padding:9px 14px;border:1px solid #fff;border-radius:999px;background:#ffffffe0;box-shadow:0 7px 20px #4963a21c;color:#36509a;font:700 10px/1 Manrope,sans-serif;letter-spacing:.1em;margin-bottom:24px}
+body.modern-site .hero-kicker i{font-size:15px;font-style:normal;color:#7493db}
+body.modern-site .mh-display{color:#192741;font-size:clamp(49px,5.15vw,74px);line-height:1.09}
+body.modern-site .mh-lead{color:#3f4f68;font-size:17px;margin-block:22px 30px}
+body.modern-site .mh-hero .mh-button:not(.ghost){background:linear-gradient(120deg,#415cd0,#31439b);border-color:#3e53b4;box-shadow:0 10px 25px #364fb54a}
+body.modern-site .mh-hero .mh-button.ghost{color:#304a98}
+body.modern-site .mh-scene.hero-kids{position:relative;display:flex;align-items:center;justify-content:center;gap:0;aspect-ratio:1.08;border-radius:44px;padding:9% 7% 15%;isolation:isolate;overflow:hidden;background:radial-gradient(circle at 18% 15%,#fff8 0%,transparent 28%),radial-gradient(circle at 83% 20%,#f9e0ff 0%,transparent 34%),linear-gradient(140deg,#c4d7ff 0%,#d4c6f6 48%,#efd5e6 100%);border:1px solid #ffffffdc;box-shadow:0 27px 65px #4455a12b,inset 0 2px 0 #ffffffd9}
+body.modern-site .hero-kids:before{content:'';position:absolute;width:54%;aspect-ratio:1;border-radius:50%;right:-12%;bottom:4%;background:#ffffff57;filter:blur(2px);z-index:-1}
+body.modern-site .hero-kid{width:52%;min-width:0;padding:8px;border:1px solid #ffffffee;border-radius:30px;background:linear-gradient(135deg,#ffffffc9,#ffffff63);box-shadow:0 18px 38px #35477837,inset 0 1px 0 #fff;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+body.modern-site .hero-kid img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:22px}
+body.modern-site .hero-boy{transform:rotate(-5deg) translate(5%,7%)}
+body.modern-site .hero-girl{transform:rotate(5deg) translate(-5%,-5%)}
+body.modern-site .hero-kids-label{position:absolute;bottom:7%;left:50%;transform:translateX(-50%);white-space:nowrap;padding:11px 16px;background:#ffffffda;border:1px solid #fff;border-radius:999px;box-shadow:0 8px 20px #46538b22;color:#324781;font:700 9px/1 Manrope,sans-serif;letter-spacing:.08em;backdrop-filter:blur(18px)}
+body.modern-site .hero-kids-label span{color:#a47bd4;font-size:15px;margin-right:4px}
+body.modern-site .mh-app-grid{background:radial-gradient(circle at 90% 10%,#c2b4f577,transparent 35%),radial-gradient(circle at 0% 100%,#a8cdf088,transparent 42%),linear-gradient(125deg,#ffffffeb,#f2efffde);border:1px solid #fff;box-shadow:0 25px 65px #3f539128,inset 0 2px 0 #fff;backdrop-filter:blur(25px) saturate(145%);-webkit-backdrop-filter:blur(25px) saturate(145%)}
+body.modern-site .mh-app-copy>p,body.modern-site .mh-source-intro{color:#43536a}
+body.modern-site .mh-source-section{padding-block:70px 85px}
+body.modern-site .mh-source-grid article,body.modern-site .mh-source-grid article:first-child{background:linear-gradient(130deg,#fffffff0,#eaf2ffe0);border:1px solid #fff;box-shadow:0 12px 30px #53679c1a,inset 0 1px #fff}
+body.modern-site .mh-source-grid article:nth-child(2){background:linear-gradient(130deg,#fff9fded,#f2e8fde8)}
+body.modern-site .mh-source-grid article:nth-child(3){background:linear-gradient(130deg,#fffdf5f2,#e5f3ecec)}
+body.modern-site .eva-pricing{background:radial-gradient(circle at 100% 0%,#c4d6ff9c,transparent 36%),linear-gradient(130deg,#ffffffee,#f6effbed);border:1px solid #fff;box-shadow:0 24px 65px #5264a01d,inset 0 2px 0 #fff}
+body.modern-site .eva-price-grid h3{color:#17233b}
+body.modern-site .eva-price-grid article>p:not(.eva-price),body.modern-site .eva-price-detail,body.modern-site .eva-pricing-note{color:#4b586c}
+body.modern-site .journey-reader,body.modern-site .lesson-panel,body.modern-site .booking-panel,body.modern-site .booking-summary{background:#ffffffea;border-color:#fff;box-shadow:0 20px 55px #344b8223}
+body.modern-site .footer{color:#42516b}
+@media(max-width:760px){body.modern-site .mh-hero{padding-block:38px 50px;gap:28px}body.modern-site .hero-kicker{margin-bottom:18px}body.modern-site .mh-display{font-size:clamp(40px,9vw,54px)}body.modern-site .mh-scene.hero-kids{width:100%;max-width:500px;border-radius:30px;padding:9% 7% 16%}body.modern-site .hero-kid{padding:5px;border-radius:20px}body.modern-site .hero-kid img{border-radius:15px}body.modern-site .hero-kids-label{font-size:8px;padding:10px 12px}body.modern-site .mh-source-section{padding-block:42px 50px}}
+@media(prefers-reduced-transparency:reduce){body.modern-site .hero-kid,body.modern-site .hero-kids-label,body.modern-site .mh-app-grid{backdrop-filter:none;-webkit-backdrop-filter:none;background:#f7f8ff}}

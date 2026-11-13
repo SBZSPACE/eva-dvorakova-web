@@ -16,16 +16,16 @@ export function renderPricing({icon,id='pricing'}) {
 export function renderModernHome(config,{icon,escape:esc}){
  applyAvatarQuery();
  const a=rememberedAvatar;
- const intro='Společně najdeme cestu, která bude vyhovovat právě Vašemu dítěti.';
+ const intro='Hravě, s porozuměním a vlastním tempem.';
  const title='Podpora řeči<br><em>Vašeho dítěte.</em>';
  return `<main id="main" class="mh-home">
   <section class="mh-hero shell" aria-labelledby="modern-title">
-   <div class="mh-copy"><h1 class="mh-display" id="modern-title">${title}</h1><p class="mh-lead">${intro}</p><div class="mh-actions"><a class="mh-button" href="/rezervace/" data-link>Domluvit úvodní rozhovor ${icon('arrow')}</a><a class="mh-button ghost" href="#app-preview">Prohlédnout aplikaci ${icon('arrow')}</a></div></div>
-   <div class="mh-scene">${img('story-world.webp','Papírový svět modrých stromů, sovy a husy vyrůstající z otevřené knihy','mh-world',true)}</div>
+   <div class="mh-copy"><span class="hero-kicker"><i aria-hidden="true">✳</i> PRO RODIČE A DĚTI</span><h1 class="mh-display" id="modern-title">${title}</h1><p class="mh-lead">${intro}</p><div class="mh-actions"><a class="mh-button" href="/rezervace/" data-link>Domluvit úvodní rozhovor ${icon('arrow')}</a><a class="mh-button ghost" href="#app-preview">Prohlédnout aplikaci ${icon('arrow')}</a></div></div>
+   <div class="mh-scene hero-kids" aria-label="Ukázka dětských průvodců budoucí aplikace"><div class="hero-kid hero-boy">${img('avatars/boy-brown-brown-mint.webp','Usměvavý chlapeček, průvodce budoucí aplikací','',true)}</div><div class="hero-kid hero-girl">${img('avatars/girl-brown-brown-purple.webp','Usměvavá holčička, průvodkyně budoucí aplikací','',true)}</div><span class="hero-kids-label"><span aria-hidden="true">✦</span> NÁHLED BUDOUCÍ APLIKACE</span></div>
   </section>
   <section class="mh-app-section shell" id="app-preview" aria-labelledby="app-title">
    <div class="mh-app-grid">
-    <div class="mh-app-copy"><span class="mh-kicker">Připravovaná aplikace mluvíme</span><h2 id="app-title">Průvodce pro<br><em>společné chvíle.</em></h2><p>Hravý svět, který připravujeme pro společné chvíle doma.</p>
+    <div class="mh-app-copy"><span class="mh-kicker">Připravovaná aplikace mluvíme</span><h2 id="app-title">Malý průvodce.<br><em>Společné chvíle.</em></h2><p>Hravý svět pro společné chvíle.</p>
      <div class="mh-benefits" role="group" aria-label="Části ukázky"><button type="button" data-demo-view="choose" class="is-active" aria-pressed="true"><span>01</span>Vybrat průvodce ${icon('arrow')}</button><button type="button" data-demo-view="video" aria-pressed="false"><span>02</span>Poslechnout pozdrav ${icon('play')}</button><button type="button" data-demo-view="story" aria-pressed="false"><span>03</span>Obrázkové kartičky ${icon('book')}</button></div>
     </div>
     <div class="mh-device-wrap"><div class="mh-device"><div class="iphone-status" aria-hidden="true"><span class="iphone-clock">9:41</span><span class="iphone-island"></span><span class="iphone-indicators"><svg viewBox="0 0 60 14" fill="currentColor"><path d="M1 9h3v4H1zm5-3h3v7H6zm5-3h3v10h-3zm5-3h3v13h-3z"/><path d="M24 4c4-4 10-4 14 0l-2 2c-3-3-7-3-10 0zm3 4c2-2 6-2 8 0l-2 2c-1-1-3-1-4 0zm4 3 2 2h-4z"/><rect x="43" y="2" width="14" height="10" rx="2" fill="none" stroke="currentColor"/><rect x="45" y="4" width="10" height="6" rx="1"/><path d="M58 5h2v4h-2z"/></svg></span></div><div class="mh-device-top"><span>mluvíme<span class="mh-logo-dot">.</span></span><span class="mh-preview-badge">Ukázka</span></div><div class="mh-device-screen" id="demo-screen"></div><div class="mh-device-bottom"><span></span></div></div><p class="mh-device-note">Ukázka připravované aplikace.<br>Pro společné chvíle s dospělým.</p></div>
@@ -35,7 +35,7 @@ export function renderModernHome(config,{icon,escape:esc}){
     </div>
    </div>
   </section>
-  <section class="mh-source-section shell" aria-labelledby="source-title"><span class="mh-kicker">Vlastní nápady a pracovní listy</span><h2 id="source-title">Malé kroky<br><em>mezi setkáními.</em></h2><p class="mh-source-intro">Nápady a obrázky pro chvíle, které trávíte spolu.</p><div class="mh-source-grid"><article><span>01</span><h3>S — Had</h3><p>Obrázky a společné povídání.</p></article><article><span>02</span><h3>L — Zpěvák</h3><p>Rytmus, pohyb a grafomotorika.</p></article><article><span>03</span><h3>Jazýčkoauto</h3><p>Obrázkový příběh a hra s pusinkou.</p><a class="mh-open-app" href="/auticka/" data-link>Prohlédnout autíčka ${icon('arrow')}</a></article></div><a class="mh-open-app" href="/lekce/" data-link>Vyzkoušet společnou chvíli ${icon('arrow')}</a><a class="mh-open-app" href="/materialy/" data-link>Prohlédnout materiály ${icon('arrow')}</a></section>
+  <section class="mh-source-section shell" aria-labelledby="source-title"><span class="mh-kicker">Vlastní nápady a pracovní listy</span><h2 id="source-title">Hrajeme si.<br><em>Objevujeme.</em></h2><p class="mh-source-intro">Nápady pro společné chvíle.</p><div class="mh-source-grid"><article><span>01</span><h3>S — Had</h3><p>Obrázky a slova.</p></article><article><span>02</span><h3>L — Zpěvák</h3><p>Rytmus a pohyb.</p></article><article><span>03</span><h3>Jazýčkoauto</h3><p>Hra s pusinkou.</p><a class="mh-open-app" href="/auticka/" data-link>Prohlédnout autíčka ${icon('arrow')}</a></article></div><a class="mh-open-app" href="/lekce/" data-link>Vyzkoušet společnou chvíli ${icon('arrow')}</a><a class="mh-open-app" href="/materialy/" data-link>Prohlédnout materiály ${icon('arrow')}</a></section>
   ${renderPricing({icon,id:'home-pricing'})}
  </main>`;
 }
