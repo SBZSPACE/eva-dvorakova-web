@@ -1,0 +1,49 @@
+/* A quiet, translucent visual layer for Eva's existing site. */
+body.modern-site{--modern-blue:#304a98;--modern-ink:#202a39;--modern-border:#33447720;background:radial-gradient(ellipse 80% 36% at 3% 0%,#e8ecfb 0%,transparent 66%),radial-gradient(ellipse 70% 40% at 96% 28%,#f3e8e8 0%,transparent 68%),linear-gradient(160deg,#fafbff 0%,#f7f6f3 55%,#edf1f7 100%);color:#202a39}
+body.modern-site .site-header{padding-top:18px}
+body.modern-site .header-row{height:76px;padding:0 20px 0 26px;border:1px solid #ffffffd9;border-radius:26px;background:#ffffffb8;box-shadow:0 12px 35px #273a7310,inset 0 1px #fff;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+body.modern-site .brand strong{font-size:21px;color:#304a98;letter-spacing:-.05em}
+body.modern-site .desktop-nav{gap:24px;color:#414b5b}
+body.modern-site .desktop-nav>a:not(.btn):hover{color:#304a98}
+body.modern-site .mobile-menu{background:#fdfdfbf2;border:1px solid #fff;border-radius:20px;box-shadow:0 16px 36px #273a731c;backdrop-filter:blur(20px)}
+body.modern-site :is(.btn,.mh-button),body.modern-site main:not(.mh-home):not(:has(#admin-host)) .btn{border-radius:999px;box-shadow:0 8px 18px #304a9821;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+body.modern-site :is(.btn,.mh-button):hover{transform:translateY(-2px);box-shadow:0 12px 24px #304a9829}
+body.modern-site .mh-button.ghost,body.modern-site .btn.outline{box-shadow:none}
+body.modern-site .mh-hero{min-height:615px;gap:42px;padding-block:58px 76px}
+body.modern-site .mh-display{font-size:clamp(48px,5.1vw,74px);line-height:1.09;max-width:680px}
+body.modern-site .mh-lead{font-size:17px;line-height:1.7;color:#586373;max-width:440px}
+body.modern-site .mh-scene{border:1px solid #ffffffd9;border-radius:42px;background:radial-gradient(circle at 55% 40%,#fffdf9 4%,#e8ecf8 58%,#dce4f3 100%);box-shadow:0 30px 70px #33477916,inset 0 1px 0 #fff;overflow:hidden}
+body.modern-site .mh-world{padding:6%;filter:drop-shadow(0 18px 18px #46516a19)}
+body.modern-site .mh-app-section,body.modern-site .mh-source-section,body.modern-site .eva-pricing{border:0}
+body.modern-site .mh-app-section{padding-block:30px 55px}
+body.modern-site .mh-app-grid{padding:54px 42px;column-gap:32px;background:linear-gradient(125deg,#ffffffdf,#eef1fbca);border:1px solid #ffffffea;border-radius:38px;box-shadow:0 22px 60px #3c4c7514,inset 0 1px #fff;backdrop-filter:blur(20px)}
+body.modern-site .mh-app-copy h2{font-size:clamp(35px,3.4vw,46px)}
+body.modern-site .mh-benefits button{border-color:#d6dced}
+body.modern-site .mh-gender button,body.modern-site .mh-swatches button{border-radius:14px}
+body.modern-site .mh-device{box-shadow:0 25px 50px #26355726}
+body.modern-site .mh-source-section{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:0 60px;padding-block:65px 78px}
+body.modern-site .mh-source-section>.mh-kicker{grid-column:1;grid-row:1}
+body.modern-site .mh-source-section>h2{grid-column:1;grid-row:2}
+body.modern-site .mh-source-section>.mh-source-intro{grid-column:1;grid-row:3;max-width:410px;margin:18px 0}
+body.modern-site .mh-source-section>.mh-open-app{grid-column:1;grid-row:auto;margin-top:6px;justify-self:start}
+body.modern-site .mh-source-grid{grid-column:2;grid-row:1 / span 6;display:grid;gap:12px}
+body.modern-site .mh-source-grid article,body.modern-site .mh-source-grid article:first-child{grid-template-columns:28px minmax(0,1fr);gap:3px 14px;padding:20px 22px;border:1px solid #ffffffed;border-radius:20px;background:#ffffffa6;box-shadow:0 9px 28px #32446e0a}
+body.modern-site .mh-source-grid article>span{grid-row:1 / span 2;color:#5369a0}
+body.modern-site .mh-source-grid h3{font-size:21px}
+body.modern-site .mh-source-grid p,body.modern-site .mh-source-grid article>a{grid-column:2}
+body.modern-site .mh-source-grid article>a{min-height:30px}
+body.modern-site .eva-pricing{padding:54px 42px 48px;margin-block:0 65px;background:linear-gradient(140deg,#ffffffd9,#e9edf9ba);border:1px solid #fff;border-radius:36px;box-shadow:0 20px 55px #34487510}
+body.modern-site .eva-price-grid article{border-color:#9eaacb55}
+body.modern-site .eva-price-grid .eva-price{color:#304a98}
+body.modern-site .eva-pricing-status{background:#e4e9f6;color:#344c84;padding:8px 12px;border-radius:999px;max-width:none}
+body.modern-site :is(.journey-reader,.lesson-panel,.booking-panel,.booking-summary,.eva-journey-feature){border:1px solid #ffffffd9;border-radius:28px;background:#ffffffc7;box-shadow:0 18px 50px #34487513;overflow:hidden;backdrop-filter:blur(18px)}
+body.modern-site main:not(.mh-home):not(:has(#admin-host)) .eva-journey-feature{padding:24px;gap:32px}
+body.modern-site .eva-journey-cover{border-radius:18px}
+body.modern-site .journey-overview button[aria-current=step]{border-radius:12px}
+body.modern-site main:not(.mh-home):not(:has(#admin-host)) .topic-big{padding:24px;border:1px solid #fff;border-radius:22px;background:#ffffffaa}
+body.modern-site .contact-band{border-radius:32px}
+body.modern-site .footer{border-top:1px solid #304a981f}
+@media(max-width:1150px){body.modern-site .mh-app-grid{padding:42px;gap:28px 38px}}
+@media(max-width:760px){body.modern-site .site-header{padding-top:12px}body.modern-site .header-row{height:65px;padding:0 16px 0 19px;border-radius:21px}body.modern-site .mh-hero{padding-block:44px 48px;gap:28px}body.modern-site .mh-display{font-size:clamp(40px,9vw,56px)}body.modern-site .mh-lead{font-size:15px}body.modern-site .mh-scene{border-radius:30px}body.modern-site .mh-app-section{padding-block:8px 35px}body.modern-site .mh-app-grid{padding:30px 22px;border-radius:28px;gap:0}body.modern-site .mh-app-copy h2{font-size:35px}body.modern-site .mh-app-options{margin-top:26px}body.modern-site .mh-source-section{display:block;padding-block:38px 50px}body.modern-site .mh-source-section>.mh-source-intro{margin:16px 0 24px}body.modern-site .mh-source-grid{margin:0 0 20px;gap:10px}body.modern-site .mh-source-section>.mh-open-app{display:inline-flex;margin:8px 20px 0 0}body.modern-site .eva-pricing{padding:30px 24px;margin-block:0 45px;border-radius:26px}body.modern-site .eva-pricing-status{display:inline-block}body.modern-site .eva-price-grid article{border-top-color:#b9c3d655}body.modern-site :is(.journey-reader,.lesson-panel,.booking-panel,.booking-summary){border-radius:22px}body.modern-site main:not(.mh-home):not(:has(#admin-host)) .eva-journey-feature{padding:16px;gap:22px}}
+@media(prefers-reduced-transparency:reduce){body.modern-site :is(.header-row,.mh-app-grid,.mobile-menu,.journey-reader,.lesson-panel){backdrop-filter:none;-webkit-backdrop-filter:none;background:#fff}}
+@media(prefers-reduced-motion:reduce){body.modern-site :is(.btn,.mh-button){transition:none}body.modern-site :is(.btn,.mh-button):hover{transform:none}}
