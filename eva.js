@@ -1,7 +1,7 @@
 import {renderMobileApp,mountMobileApp} from './mobile-app.js?v=eva-pripominky-28';
 import {routeURL,routeParams,pageHref,preparePageLinks} from './pages-router.js?v=eva-notes-13';
 import {runtime} from './runtime.js?v=eva-notes-13';
-import {renderModernHome,renderAppPreview,mountModernHome,renderPricing} from './modern-home.js?v=eva-pripominky-28';
+import {renderModernHome,renderAppPreview,mountModernHome,renderPricing} from './modern-home.js?v=eva-pripominky-29';
 const site = document.querySelector('#site');
 const art = '/eva-dvorakova-web/assets/illustrations/';
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
