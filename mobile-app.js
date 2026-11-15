@@ -1,5 +1,5 @@
 import {routeParams} from './pages-router.js?v=eva-notes-13';
-import {journeySteps} from './journey.js?v=clean-18';
+import {journeySteps} from './journey.js?v=speed-32';
 const art='/eva-dvorakova-web/assets/illustrations/';
 const values={gender:['boy','girl'],hair:['brown','blond'],eyes:['brown','blue'],outfit:['purple','mint']};
 const defaults={gender:'boy',hair:'blond',eyes:'blue',outfit:'purple'};
@@ -8,7 +8,7 @@ const avatarPath=a=>`${art}avatars/${a.gender}-${a.hair}-${a.eyes}-${a.outfit}.w
 const avatarAlt=a=>`${a.gender==='boy'?'Chlapeček':'Holčička'}, ${a.hair==='blond'?'blond':'hnědé'} vlasy, ${a.eyes==='blue'?'modré':'hnědé'} oči`;
 const chip=(key,value,label,a)=>`<button type="button" data-action="set" data-key="${key}" data-value="${value}" aria-pressed="${a[key]===value}">${label}</button>`;
 const choice=(gender,label,a)=>`<button type="button" class="fa-child" data-action="set" data-key="gender" data-value="${gender}" aria-pressed="${a.gender===gender}"><img src="${avatarPath({...a,gender})}" alt=""><span>${label}</span></button>`;
-function scene(i){let cell=i%7,atlas=i<7?1:2,x=(cell%2)*100,y=Math.floor(cell/2)*(100/3);return `<div class="fa-car" role="img" aria-label="${esc(journeySteps[i].alt)}" style="background-image:url('${art}auticka/atlas-${atlas}.png');background-position:${x}% ${y}%"></div>`;}
+function scene(i){let cell=i%7,atlas=i<7?1:2,x=(cell%2)*100,y=Math.floor(cell/2)*(100/3);return `<div class="fa-car" role="img" aria-label="${esc(journeySteps[i].alt)}" style="background-image:url('${art}auticka/atlas-${atlas}.webp');background-position:${x}% ${y}%"></div>`;}
 export function renderMobileApp(){return `<main id="main" class="family-app"><header class="fa-header"><a class="fa-logo" href="/" data-link aria-label="Zpět na web Evy Dvořákové">mluvíme<span>.</span></a><a class="fa-parent" href="/" data-link>Pro rodiče <span aria-hidden="true">↗</span></a></header><div id="family-app-screen" class="fa-screen"></div></main>`;}
 export function mountMobileApp(root){
  if(!root)return()=>{};const host=root.querySelector('#family-app-screen');if(!host)return()=>{};
@@ -21,7 +21,7 @@ export function mountMobileApp(root){
  else if(view==='cards')host.innerHTML=`<div class="fa-body fa-card-screen"><div class="fa-heading"><span class="fa-step">02 / OBRÁZKY</span><h1 tabindex="-1">Kdo přišel na návštěvu?</h1><p>Vyber si obrázek.</p></div><div class="fa-animals"><button type="button" data-action="animal" data-value="owl"><img src="${art}owl.webp" alt=""><span>Sova</span></button><button type="button" data-action="animal" data-value="goose"><img src="${art}goose.webp" alt=""><span>Husa</span></button></div><button type="button" class="fa-quiet" data-action="back-story">← Zpět k příběhu</button></div>`;
  else if(view==='animal'){const name=animal==='owl'?'Sova':'Husa';host.innerHTML=`<div class="fa-body fa-card-screen"><div class="fa-heading"><span class="fa-step">OBRÁZKOVÁ KARTIČKA</span><h1 tabindex="-1">${name}</h1><p>Povídejte si spolu o obrázku.</p></div><div class="fa-animal-result"><img src="${art}${animal}.webp" alt="${name}"></div><button type="button" class="fa-primary" data-action="done">Hotovo <span aria-hidden="true">✓</span></button><button type="button" class="fa-quiet" data-action="cards">Vybrat jiný obrázek</button></div>`;}
  else host.innerHTML=`<div class="fa-body fa-finish"><div class="fa-finish-art">✦</div><div class="fa-heading"><span class="fa-step">HOTOVO</span><h1 tabindex="-1">Děkujeme za společnou chvíli.</h1></div><button type="button" class="fa-primary" data-action="restart">Zkusit znovu <span aria-hidden="true">↻</span></button><a class="fa-quiet" href="/" data-link>Zpět na web</a></div>`;
- const audio=host.querySelector('.fa-audio');const showAudioError=()=>{const notice=host.querySelector('.fa-audio-error');if(notice)notice.hidden=false;};audio?.addEventListener('error',showAudioError);audio?.querySelector('source')?.addEventListener('error',showAudioError);
+ const audio=host.querySelector('.fa-audio');if(audio){audio.defaultPlaybackRate=0.9;audio.playbackRate=0.9;}const showAudioError=()=>{const notice=host.querySelector('.fa-audio-error');if(notice)notice.hidden=false;};audio?.addEventListener('error',showAudioError);audio?.querySelector('source')?.addEventListener('error',showAudioError);
  if(focus){host.querySelector('h1')?.focus({preventScroll:true});window.scrollTo({top:0,behavior:'auto'});}
  }
  function click(e){const b=e.target.closest('button[data-action]');if(!b||!root.contains(b))return;const action=b.dataset.action;
