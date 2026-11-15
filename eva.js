@@ -3,7 +3,7 @@ import {routeURL,routeParams,pageHref,preparePageLinks} from './pages-router.js?
 import {runtime} from './runtime.js?v=eva-notes-13';
 import {renderJourney,mountJourney} from './journey.js?v=about-30';
 import {renderLesson,mountLesson} from './lesson.js?v=about-30';
-import {renderModernHome,renderAppPreview,mountModernHome,renderPricing} from './modern-home.js?v=about-30';
+import {renderModernHome,renderAppPreview,mountModernHome,renderPricing} from './modern-home.js?v=iphone-31';
 const site = document.querySelector('#site');
 const art = '/eva-dvorakova-web/assets/illustrations/';
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
