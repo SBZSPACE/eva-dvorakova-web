@@ -22,6 +22,7 @@ export function renderModernHome(config,{icon,escape:esc}){
    <div class="mh-copy"><h1 class="mh-display" id="modern-title">${title}</h1><p class="mh-lead">${intro}</p><div class="mh-actions"><a class="mh-button" href="/kontakt/" data-link>Domluvit rozhovor ${icon('arrow')}</a><a class="mh-button ghost" href="#app-preview">Prohlédnout aplikaci ${icon('arrow')}</a></div></div>
    <div class="mh-scene hero-kids" aria-label="Ukázka dětských průvodců budoucí aplikace"><div class="hero-kid hero-boy">${img('avatars/boy-blond-blue-mint.webp','Usměvavý chlapeček, průvodce budoucí aplikací','',true)}</div><div class="hero-kid hero-girl">${img('avatars/girl-brown-brown-purple.webp','Usměvavá holčička, průvodkyně budoucí aplikací','',true)}</div></div>
   </section>
+  <section class="shell eva-profile" aria-labelledby="eva-profile-title"><div><h2 id="eva-profile-title">Dobrý den,<br><em>jsem Eva.</em></h2></div><div><p>Ve školství pracuji od roku 1985. Mám 34 let praxe ve speciální logopedické třídě a 20 let jsem zároveň vedla mateřskou školu jako ředitelka.</p><a class="mh-open-app" href="/o-mne/" data-link>Více o mně ${icon('arrow')}</a></div></section>
   <section class="mh-app-section shell" id="app-preview" aria-labelledby="app-title">
    <div class="mh-app-grid">
     <div class="mh-app-copy"><span class="mh-kicker">Ukázka aplikace</span><h2 id="app-title">Spolu je to<br><em>zábava.</em></h2>
@@ -34,7 +35,7 @@ export function renderModernHome(config,{icon,escape:esc}){
     </div>
    </div>
   </section>
-  <section class="mh-source-section shell" aria-labelledby="source-title"><h2 id="source-title">Hrajeme si.<br><em>Objevujeme.</em></h2><div class="mh-source-grid"><article><span class="mh-tile-art mh-tile-owl" aria-hidden="true"><img src="/eva-dvorakova-web/assets/illustrations/owl.webp" alt=""></span><h3><a href="/materialy/" data-link>Obrázkové kartičky</a></h3></article><article><span class="mh-tile-art mh-tile-goose" aria-hidden="true"><img src="/eva-dvorakova-web/assets/illustrations/goose.webp" alt=""></span><h3><a href="/materialy/" data-link>Hry s hláskami</a></h3></article></div><a class="mh-open-app" href="/materialy/" data-link>Prohlédnout materiály ${icon('arrow')}</a></section>
+  <section class="mh-source-section shell" aria-labelledby="source-title"><h2 id="source-title">Hrajeme si.<br><em>Objevujeme.</em></h2><div class="mh-source-grid"><article><span class="mh-tile-art mh-tile-car" aria-hidden="true"></span><h3>Jazýčkoauto</h3><a class="mh-open-app" href="/auticka/" data-link>Prohlédnout autíčka ${icon('arrow')}</a></article><article><span class="mh-tile-art mh-tile-owl" aria-hidden="true"><img src="/eva-dvorakova-web/assets/illustrations/owl.webp" alt=""></span><h3><a href="/materialy/" data-link>Obrázkové kartičky</a></h3></article><article><span class="mh-tile-art mh-tile-goose" aria-hidden="true"><img src="/eva-dvorakova-web/assets/illustrations/goose.webp" alt=""></span><h3><a href="/materialy/" data-link>Hry s hláskami</a></h3></article></div><a class="mh-open-app" href="/materialy/" data-link>Prohlédnout materiály ${icon('arrow')}</a></section>
   ${renderPricing({icon,id:'home-pricing'})}
  </main>`;
 }
