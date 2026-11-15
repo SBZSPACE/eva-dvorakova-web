@@ -3,7 +3,6 @@ body.modern-site .mh-source-grid article,body.modern-site .mh-source-grid articl
 body.modern-site .mh-source-grid article .mh-tile-art{grid-column:1;grid-row:1 / span 2;display:grid;place-items:center;width:104px;height:104px;overflow:hidden;border-radius:18px;padding:8px;background:linear-gradient(145deg,#e5effd,#c8d5f4);box-shadow:inset 0 1px 2px #fff9}
 body.modern-site .mh-source-grid .mh-tile-art img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 5px 5px #35446825)}
 body.modern-site .mh-source-grid article .mh-tile-goose{background:linear-gradient(145deg,#f4eafd,#e0d5f4)}
-body.modern-site .mh-source-grid article .mh-tile-car{background-image:url('/eva-dvorakova-web/assets/illustrations/auticka/atlas-1.png');background-size:200% 400%;background-position:0 0;background-repeat:no-repeat}
 body.modern-site .mh-source-grid article :is(h3,a){grid-column:2}
 body.modern-site .mh-source-grid article h3{align-self:end}
 body.modern-site .mh-source-grid article .mh-open-app{align-self:start;margin-top:0}
