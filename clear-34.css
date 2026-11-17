@@ -1,0 +1,20 @@
+/* Fewer words, clearer hierarchy, consistent glass cards. */
+body.modern-site .mh-copy .mh-lead{max-width:410px}
+body.modern-site .eva-profile-compact{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.65fr);gap:40px}
+body.modern-site .eva-profile-head .mh-open-app{display:inline-flex;margin-top:22px}
+body.modern-site .eva-profile-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0}
+body.modern-site .eva-profile-facts div{min-width:0;padding:20px 17px;border:1px solid #ffffffdc;border-radius:20px;background:linear-gradient(140deg,#ffffffbd,#edf1ff90);box-shadow:inset 0 1px #fff}
+body.modern-site .eva-profile-facts dt{color:#304ca1;font:700 clamp(20px,2vw,28px)/1.2 Manrope,sans-serif;letter-spacing:-.04em}
+body.modern-site .eva-profile-facts dd{margin:8px 0 0;color:#53617a;font:500 12px/1.5 Manrope,sans-serif}
+body.modern-site .eva-section-heading{margin-bottom:27px}
+body.modern-site .eva-flow-grid article{min-height:155px}
+body.modern-site .eva-flow-grid p{max-width:235px}
+body.modern-site .mh-source-grid.eva-compact-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+body.modern-site .mh-source-grid.eva-compact-grid article,body.modern-site .mh-source-grid.eva-compact-grid article:first-child{display:flex;align-items:center;gap:16px;min-height:110px;padding:12px;border-radius:21px}
+body.modern-site .mh-source-grid.eva-compact-grid article .mh-tile-art{flex:0 0 82px;width:82px;height:82px;border-radius:15px}
+body.modern-site .mh-source-grid.eva-compact-grid article h3{align-self:center!important;font-size:17px;line-height:1.3;padding:0;min-width:0}
+body.modern-site .eva-example div>p{max-width:390px}
+@media(max-width:760px){body.modern-site .eva-profile-compact{grid-template-columns:1fr;gap:21px}body.modern-site .eva-profile-head{display:flex;align-items:end;justify-content:space-between;gap:12px}body.modern-site .eva-profile-head .mh-open-app{margin-top:0;white-space:nowrap}body.modern-site .eva-profile-facts{gap:7px}body.modern-site .eva-profile-facts div{padding:14px 10px;border-radius:15px}body.modern-site .eva-profile-facts dt{font-size:clamp(15px,4vw,20px)}body.modern-site .eva-profile-facts dd{font-size:10px}body.modern-site .eva-flow-grid article{min-height:0}body.modern-site .mh-source-grid.eva-compact-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}body.modern-site .mh-source-grid.eva-compact-grid article,body.modern-site .mh-source-grid.eva-compact-grid article:first-child{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:10px;min-height:155px;padding:12px}body.modern-site .mh-source-grid.eva-compact-grid article .mh-tile-art{flex:0 0 68px;width:68px;height:68px}body.modern-site .mh-source-grid.eva-compact-grid article h3{align-self:flex-start!important;font-size:14px}}
+body.modern-site .mh-source-grid.eva-compact-grid article{position:relative}
+body.modern-site .mh-source-grid.eva-compact-grid article h3 a::after{content:'';position:absolute;inset:0;border-radius:inherit}
+@media(max-width:380px){body.modern-site .eva-profile-head{display:block}body.modern-site .eva-profile-head .mh-open-app{margin-top:14px}body.modern-site .eva-profile-facts dt{font-size:13px;letter-spacing:-.03em}}
