@@ -1,7 +1,7 @@
 import {routeURL,routeParams,pageHref,preparePageLinks} from './pages-router.js?v=eva-notes-13';
 import {runtime} from './runtime.js?v=eva-notes-13';
 import {renderJourney,mountJourney} from './journey.js?v=hra-38';
-import {renderModernHome,gameNoticePage,renderPricing} from './modern-home.js?v=darky-39';
+import {renderModernHome,gameNoticePage,renderPricing} from './modern-home.js?v=poukaz-40';
 const site = document.querySelector('#site');
 const art = '/eva-dvorakova-web/assets/illustrations/';
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
