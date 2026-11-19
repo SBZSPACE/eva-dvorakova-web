@@ -147,27 +147,31 @@ body.modern-site .gift-banner .gift-banner-copy h2 em {
   gap: clamp(6px, 1.3vw, 20px);
   padding: clamp(32px, 6vh, 80px) 0 clamp(82px, 15vh, 190px);
 }
-.gift-hero-copy { position: relative; z-index: 1; }
+.gift-hero-copy {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  container-type: inline-size;
+}
 .gift-hero-copy h1 {
   margin: 0;
   color: #fffaf4;
-  font: 675 clamp(48px, 5.45vw, 90px)/1.025 Manrope, sans-serif;
-  letter-spacing: -.06em;
+  font: 575 clamp(1.5rem, 4vw, 4.1rem)/1.16 Manrope, sans-serif;
+  font-size: clamp(1.5rem, 10.1cqi, 4.1rem);
+  letter-spacing: -.047em;
 }
+.gift-hero-copy h1 span, .gift-hero-copy h1 em, .gift-lead span { display: block; }
 .gift-hero-copy h1 em {
-  display: block;
-  margin-top: .12em;
-  font: 460 .91em/1.18 Literata, Georgia, serif;
+  margin-top: .07em;
   color: #ffe2ad;
-  letter-spacing: -.058em;
+  font: 460 1.42em/1.12 Literata, Georgia, serif;
+  letter-spacing: -.055em;
 }
 .gift-lead {
-  max-width: 34ch;
-  margin: clamp(18px, 2.1vw, 32px) 0 0;
+  margin: clamp(18px, 1.9vw, 27px) 0 0;
   color: #efe8f4;
   font-size: clamp(15px, 1.3vw, 20px);
-  line-height: 1.56;
-  text-wrap: balance;
+  line-height: 1.52;
 }
 .gift-visual {
   isolation: isolate;
@@ -243,19 +247,23 @@ body.modern-site .gift-banner:focus-visible { outline: 3px solid #b1914a; outlin
   .gift-back { font-size: 13px; }
   .gift-hero {
     grid-template-columns: 1fr;
-    gap: clamp(2px, 1.3vh, 14px);
+    gap: clamp(12px, 2.4vh, 26px);
     padding: clamp(22px, 3.7vh, 45px) 0 clamp(55px, 11vh, 96px);
   }
-  .gift-hero-copy { padding-inline-start: 4px; transform: none; }
-  .gift-hero-copy h1 { font-size: clamp(40px, 10.9vw, 70px); }
-  .gift-lead { margin-top: 14px; max-width: 32ch; font-size: clamp(14px, 3.8vw, 18px); }
+  .gift-hero-copy {
+    width: min(100%, 32rem);
+    margin-inline: auto;
+    padding: 0;
+    transform: none;
+    text-align: center;
+  }
+  .gift-lead { margin-top: 17px; font-size: clamp(14px, 3.8vw, 18px); }
   .gift-visual { width: min(100%, 450px); margin-inline: auto; }
   .gift-envelope { width: 108%; margin-inline-start: -4%; }
 }
 @media (max-height: 480px) and (orientation: landscape) {
   .gift-nav { padding-block: 3px; }
   .gift-hero { padding-block: 14px 28px; }
-  .gift-hero-copy h1 { font-size: clamp(35px, 5vw, 48px); }
   .gift-visual { width: min(100%, 355px); justify-self: center; }
   .gift-lead { margin-top: 12px; font-size: 14px; }
 }
