@@ -15,7 +15,7 @@ export function renderPricing({icon,id='pricing'}) {
 export function renderModernHome(config,{icon,escape:esc}){
  applyAvatarQuery();
  const a=rememberedAvatar;
- const intro='Individuální podpora a hravé nápady pro děti a rodiče.';
+ const intro='Společně najdeme cestu, která bude vyhovovat právě Vašemu dítěti.';
  const title='Pomáhám dětem<br><em>rozvíjet řeč.</em>';
  return `<main id="main" class="mh-home">
   <section class="mh-hero shell" aria-labelledby="modern-title">
@@ -23,16 +23,26 @@ export function renderModernHome(config,{icon,escape:esc}){
    <div class="mh-scene hero-kids" aria-label="Ukázka dětských průvodců budoucí aplikace"><div class="hero-kid hero-boy">${img('avatars/boy-blond-blue-mint.webp','Usměvavý chlapeček, průvodce budoucí aplikací','',true)}</div><div class="hero-kid hero-girl">${img('avatars/girl-brown-brown-purple.webp','Usměvavá holčička, průvodkyně budoucí aplikací','',true)}</div></div>
   </section>
   <section class="shell eva-profile eva-profile-compact" id="o-eve" aria-labelledby="eva-profile-title"><div class="eva-profile-head"><h2 id="eva-profile-title">Dobrý den,<br><em>jsem Eva.</em></h2><a class="mh-open-app" href="/o-mne/" data-link>Více o mně ${icon('arrow')}</a></div><dl class="eva-profile-facts"><div><dt>Od roku 1985</dt><dd>ve školství</dd></div><div><dt>34 let</dt><dd>ve speciální logopedické třídě</dd></div><div><dt>20 let</dt><dd>vedení mateřské školy</dd></div></dl></section>
-  <section class="shell eva-flow" id="spoluprace" aria-labelledby="flow-title"><div class="eva-section-heading"><h2 id="flow-title">Jak to probíhá?</h2></div><div class="eva-flow-grid"><article><span>01</span><h3>Promluvíme si</h3><p>Řeknete mi, čeho si u dítěte všímáte.</p></article><article><span>02</span><h3>Poznáme se</h3><p>Podle domluvy se setkám i s dítětem.</p></article><article><span>03</span><h3>Najdeme další krok</h3><p>Společně vybereme, jak pokračovat.</p></article></div><a class="mh-open-app" href="/kontakt/" data-link>Domluvit rozhovor ${icon('arrow')}</a></section>
+  <section class="shell eva-flow" id="spoluprace" aria-labelledby="flow-title"><div class="eva-section-heading"><h2 id="flow-title">Začneme rozhovorem.</h2></div><div class="eva-flow-grid"><article><span>01</span><h3>Promluvíme si</h3><p>Řeknete mi, co Vás trápí a co Vaše dítě potřebuje.</p></article><article><span>02</span><h3>Poznáme se</h3><p>Při setkání s dítětem společně zjistíme, na co se zaměřit.</p></article><article><span>03</span><h3>Najdeme další krok</h3><p>Domluvíme si postup a vybereme vhodné hry a materiály.</p></article></div><a class="mh-open-app" href="/kontakt/" data-link>Domluvit rozhovor ${icon('arrow')}</a></section>
+  <section class="shell eva-voucher" id="vanocni-poukaz" aria-labelledby="voucher-title">
+   <div class="voucher-copy">
+    <p class="voucher-season">Vánoční poukaz</p>
+    <h2 id="voucher-title">Darujte <br><em>společné chvíle.</em></h2>
+    <p>Dárkový poukaz na setkání s Evou pro malé objevitele a jejich rodiče.</p>
+    <a class="btn" href="/eva-dvorakova-web/assets/poukaz/vanocni-poukaz-vzor.pdf" download>Stáhnout vzor (PDF) ${icon('arrow')}</a>
+    <small>Prodej poukazů připravujeme.</small>
+   </div>
+   <div class="voucher-paper"><img src="/eva-dvorakova-web/assets/poukaz/vanocni-poukaz-vzor.webp" alt="Náhled vánočního poukazu na setkání s Evou" width="1380" height="973" loading="lazy"></div>
+  </section>
   <section class="mh-app-section shell" id="app-preview" aria-labelledby="app-title">
    <div class="mh-app-grid">
-    <div class="mh-app-copy"><span class="mh-kicker">Ukázka aplikace</span><h2 id="app-title">Hravý průvodce<br><em>pro společné chvíle.</em></h2><p class="eva-app-intro">Vyberte si průvodce a objevujte obrázky společně.</p>
+    <div class="mh-app-copy"><h2 id="app-title">Malý průvodce.<br><em>Velké objevování.</em></h2><p class="eva-app-intro">Hravý svět obrázků a společných úkolů, který pro Vás připravujeme.</p>
      <div class="mh-benefits" role="group" aria-label="Části ukázky"><button type="button" data-demo-view="choose" class="is-active" aria-pressed="true"><span>01</span>Průvodce ${icon('arrow')}</button><button type="button" data-demo-view="video" aria-pressed="false"><span>02</span>Pozdrav ${icon('arrow')}</button><button type="button" data-demo-view="story" aria-pressed="false"><span>03</span>Kartičky ${icon('book')}</button></div>
     </div>
-    <div class="mh-device-wrap"><div class="mh-device"><div class="iphone-status" aria-hidden="true"><span class="iphone-clock">9:41</span><span class="iphone-island"></span><span class="iphone-indicators"><svg viewBox="0 0 60 14" fill="currentColor"><path d="M1 9h3v4H1zm5-3h3v7H6zm5-3h3v10h-3zm5-3h3v13h-3z"/><path d="M24 4c4-4 10-4 14 0l-2 2c-3-3-7-3-10 0zm3 4c2-2 6-2 8 0l-2 2c-1-1-3-1-4 0zm4 3 2 2h-4z"/><rect x="43" y="2" width="14" height="10" rx="2" fill="none" stroke="currentColor"/><rect x="45" y="4" width="10" height="6" rx="1"/><path d="M58 5h2v4h-2z"/></svg></span></div><div class="mh-device-top"><span>mluvíme<span class="mh-logo-dot">.</span></span><span class="mh-preview-parent">Pro rodiče ↗</span></div><div class="mh-device-screen" id="demo-screen"></div><div class="mh-device-bottom"><span></span></div></div><p class="mh-device-note">Ukázka aplikace.</p></div>
+    <div class="mh-device-wrap"><div class="mh-device"><div class="iphone-status" aria-hidden="true"><span class="iphone-clock">9:41</span><span class="iphone-island"></span><span class="iphone-indicators"><svg viewBox="0 0 60 14" fill="currentColor"><path d="M1 9h3v4H1zm5-3h3v7H6zm5-3h3v10h-3zm5-3h3v13h-3z"/><path d="M24 4c4-4 10-4 14 0l-2 2c-3-3-7-3-10 0zm3 4c2-2 6-2 8 0l-2 2c-1-1-3-1-4 0zm4 3 2 2h-4z"/><rect x="43" y="2" width="14" height="10" rx="2" fill="none" stroke="currentColor"/><rect x="45" y="4" width="10" height="6" rx="1"/><path d="M58 5h2v4h-2z"/></svg></span></div><div class="mh-device-top"><span>mluvíme<span class="mh-logo-dot">.</span></span><span class="mh-preview-parent">Pro rodiče ↗</span></div><div class="mh-device-screen" id="demo-screen"></div><div class="mh-device-bottom"><span></span></div></div></div>
     <div class="mh-app-options">
      <details class="mh-customizer-disclosure"><summary>Vybrat dítě a vzhled <span aria-hidden="true">＋</span></summary><div class="mh-customizer" aria-label="Vzhled průvodce"><fieldset><legend>Kdo půjde s Vámi?</legend><div class="mh-gender">${[['boy','Chlapeček'],['girl','Holčička']].map(([gender,label])=>`<button type="button" data-avatar="gender" data-value="${gender}" aria-pressed="${a.gender===gender}">${img(`avatars/${gender}-${gender==='boy'?'blond':'brown'}-${gender==='boy'?'blue':'brown'}-purple.webp`,'')}<span>${label}</span>${icon('check')}</button>`).join('')}</div></fieldset><div class="mh-swatches">${Object.entries(choices).map(([key,values])=>`<fieldset><legend>${{hair:'Vlasy',eyes:'Oči',outfit:'Oblečení'}[key]}</legend><div>${values.map(([value,label,color])=>`<button type="button" data-avatar="${key}" data-value="${value}" aria-label="${{hair:'Vlasy',eyes:'Oči',outfit:'Oblečení'}[key]}: ${label}" aria-pressed="${a[key]===value}" style="--swatch:${color}"><span class="mh-swatch-color" aria-hidden="true"></span><span class="mh-swatch-label">${label}</span></button>`).join('')}</div></fieldset>`).join('')}</div><p class="mh-screen-status screen-reader-only" aria-live="polite">${esc(description(a))}</p></div></details>
-     <a class="mh-open-app" href="/aplikace/" data-link data-open-full>Otevřít celou ukázku ${icon('arrow')}</a>
+     <a class="mh-open-app" href="/aplikace/" data-link data-open-full>Prohlédnout ukázku ${icon('arrow')}</a>
     </div>
    </div>
   </section>

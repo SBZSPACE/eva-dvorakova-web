@@ -1,0 +1,35 @@
+body.modern-site .eva-voucher {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(24px, 5vw, 74px);
+  margin-bottom: clamp(44px, 6vw, 80px);
+  padding: clamp(24px, 4.4vw, 64px);
+  border: 1px solid rgb(255 255 255 / 90%);
+  border-radius: 32px;
+  background: linear-gradient(120deg, #fbfbff, #f0f1fc 55%, #e3ecf8);
+  box-shadow: 0 16px 48px rgb(46 64 122 / 10%);
+  scroll-margin-top: 24px;
+}
+.voucher-copy h2 {
+  margin: 0;
+  color: #1d294b;
+  font: 700 clamp(34px, 4vw, 54px)/1.08 Manrope, sans-serif;
+  letter-spacing: -.05em;
+}
+.voucher-copy h2 em { color: #4e61b1; font-style: normal; }
+.voucher-copy p { max-width: 35ch; margin: 16px 0 22px; color: #43536c; line-height: 1.65; }
+.voucher-copy .voucher-season { margin: 0 0 14px; color: #495b92; font-weight: 650; }
+.voucher-copy small { display: block; margin-top: 8px; color: #54637d; }
+.voucher-paper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 14px 30px -10px rgb(39 52 102 / 30%);
+}
+.eva-about-intro + .eva-about-steps { margin-top: clamp(32px, 5vw, 66px); }
+@media (max-width: 760px) {
+  body.modern-site .eva-voucher { grid-template-columns: 1fr; border-radius: 26px; }
+  .voucher-copy h2 br { display: none; }
+}
