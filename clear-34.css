@@ -18,3 +18,33 @@ body.modern-site .eva-example div>p{max-width:390px}
 body.modern-site .mh-source-grid.eva-compact-grid article{position:relative}
 body.modern-site .mh-source-grid.eva-compact-grid article h3 a::after{content:'';position:absolute;inset:0;border-radius:inherit}
 @media(max-width:380px){body.modern-site .eva-profile-head{display:block}body.modern-site .eva-profile-head .mh-open-app{margin-top:14px}body.modern-site .eva-profile-facts dt{font-size:13px;letter-spacing:-.03em}}
+
+body.modern-site .game-notice {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3vw, 40px);
+  margin-block: clamp(28px, 4vw, 56px);
+  padding: clamp(18px, 3vw, 38px);
+  border: 1px solid #fff;
+  border-radius: 28px;
+  background: linear-gradient(110deg, #f8fbff, #f0eafa);
+  color: #243456;
+}
+.game-notice :is(h1, h2) {
+  margin: 0;
+  font: 700 clamp(24px, 3.2vw, 42px)/1.15 Manrope, sans-serif;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+.game-notice :is(h1, h2) span { white-space: nowrap; }
+.game-guides { display: flex; flex: none; align-items: center; padding-inline-start: 2px; }
+.game-guides img {
+  display: block;
+  width: clamp(44px, 6vw, 80px);
+  height: auto;
+  aspect-ratio: 1;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px #24345c18;
+}
+.game-guides img + img { margin-inline-start: -12px; }
