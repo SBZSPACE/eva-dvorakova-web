@@ -216,6 +216,7 @@ body.modern-site .gift-banner:focus-visible { outline: 3px solid #b1914a; outlin
 .gift-dialog-top, .gift-dialog-bottom { display: flex; justify-content: flex-end; align-items: center; gap: 12px; }
 .gift-dialog-top { margin-bottom: 14px; }
 .gift-close { width: 44px; height: 44px; border: 1px solid #dedbe4; border-radius: 50%; color: #322946; background: #f3f0f7; font: 420 25px/1 Manrope, sans-serif; cursor: pointer; }
+.gift-paper-link { display: block; cursor: zoom-in; }
 .gift-paper { display: block; width: 100%; height: auto; border-radius: 4px; }
 .gift-dialog-bottom { margin-top: 18px; flex-wrap: wrap; }
 .gift-save:hover { background: #423462; }
@@ -266,4 +267,19 @@ body.modern-site .gift-banner:focus-visible { outline: 3px solid #b1914a; outlin
   .gift-hero { padding-block: 14px 28px; }
   .gift-visual { width: min(100%, 355px); justify-self: center; }
   .gift-lead { margin-top: 12px; font-size: 14px; }
+}
+@media (max-width: 480px) {
+  body.modern-site .gift-banner {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 6px;
+    padding: 22px 12px 8px;
+  }
+  .gift-banner-copy { text-align: center; }
+  .gift-banner-art { width: min(100%, 340px); }
+  .gift-banner-art img { width: 100%; margin: 0; }
+  .gift-envelope { width: 122%; margin-inline-start: -11%; }
+  .gift-dialog { width: calc(100% - 16px); max-width: none; padding: 8px; border-radius: 16px; }
+  .gift-dialog-top { margin-bottom: 6px; }
+  .gift-dialog-bottom { justify-content: center; margin: 14px 0 6px; }
 }
