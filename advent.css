@@ -133,21 +133,6 @@ body.modern-site .gift-banner .gift-banner-copy h2 em, .gift-hero-copy h1 em {
 .gift-stars { position: absolute; inset: -5% -2%; color: var(--gift-gold); }
 .gift-stars::before { position: absolute; width: 18px; top: 2%; left: 32%; opacity: .95; }
 .gift-stars::after { position: absolute; width: 11px; right: 1%; bottom: 20%; opacity: .8; }
-.gift-open-mark {
-  position: absolute;
-  bottom: 6%;
-  right: 4%;
-  z-index: 2;
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: #29223c;
-  background: var(--gift-gold);
-  box-shadow: 0 3px 14px #15122d30;
-  font: 650 21px/1 Manrope, sans-serif;
-}
 .gift-page .gift-visual:focus-visible,
 body.modern-site .gift-banner:focus-visible { outline: 3px solid #b1914a; outline-offset: 3px; border-radius: 22px; }
 .gift-dialog {
@@ -189,7 +174,6 @@ body.modern-site .gift-banner:focus-visible { outline: 3px solid #b1914a; outlin
   body.modern-site .gift-banner { grid-template-columns: 1.15fr .85fr; gap: 0; padding: 16px; border-radius: 26px; }
   body.modern-site .gift-banner .gift-banner-copy h2 { font-size: clamp(25px, 5.6vw, 34px); margin-bottom: 0; }
   .gift-banner-copy { padding: 4px 0; }
-  .gift-banner-art .gift-open-mark { width: 30px; height: 30px; right: -4%; bottom: 0; font-size: 17px; }
   .gift-banner-art img { width: 116%; max-width: none; margin-inline-start: -3%; }
 }
 @media (max-width: 370px) {
