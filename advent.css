@@ -27,24 +27,6 @@
     radial-gradient(circle at 94% 82%, #fff8 0 1.2px, transparent 2px),
     radial-gradient(circle at 42% 91%, #fff8 0 1px, transparent 1.7px);
 }
-.gift-save {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-  min-height: 48px;
-  padding: 12px 22px;
-  box-sizing: border-box;
-  border-radius: 999px;
-  background: #282143;
-  color: #fff;
-  font: 750 15px/1.4 Manrope, sans-serif;
-  letter-spacing: -.015em;
-  text-decoration: none;
-  text-shadow: none;
-  box-shadow: 0 4px 16px #16122624;
-}
-.gift-save span { font: 550 1.2em/1 Manrope, sans-serif; }
 body.modern-site .gift-banner {
   display: grid;
   text-decoration: none;
@@ -199,35 +181,17 @@ body.modern-site .gift-banner .gift-banner-copy h2 em {
   filter: drop-shadow(8px 22px 22px #18122f47);
 }
 body.modern-site .gift-banner:focus-visible { outline: 3px solid #b1914a; outline-offset: 3px; border-radius: 22px; }
-.gift-dialog {
-  background: #fcfbf8;
-  color: #26223c;
-  width: min(780px, calc(100% - 28px));
-  max-height: 90vh;
-  max-height: 90dvh;
-  overflow: auto;
-  margin: auto;
-  padding: clamp(16px, 2.8vw, 32px);
-  border: none;
-  border-radius: 24px;
-  box-shadow: 0 24px 100px #100b2959;
+.gift-request { margin-top: clamp(20px, 3vw, 32px); }
+.gift-request p { margin: 0; color: #fff5d9; font-size: 15px; line-height: 1.45; }
+.gift-request a { color: inherit; }
+.gift-request .gift-email {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: 12px 22px; margin: 0 0 9px;
+  color: #29203e; background: #ffe4ac; border-radius: 100px;
+  font-weight: 700; text-decoration: none;
 }
-.gift-dialog::backdrop { background: #131022ce; }
-.gift-dialog-top, .gift-dialog-bottom { display: flex; justify-content: flex-end; align-items: center; gap: 12px; }
-.gift-dialog-top { margin-bottom: 14px; }
-.gift-close { width: 44px; height: 44px; border: 1px solid #dedbe4; border-radius: 50%; color: #322946; background: #f3f0f7; font: 420 25px/1 Manrope, sans-serif; cursor: pointer; }
-.gift-paper-link { display: block; cursor: zoom-in; }
-.gift-paper { display: block; width: 100%; height: auto; border-radius: 4px; }
-.gift-dialog-bottom { margin-top: 18px; flex-wrap: wrap; }
-.gift-save:hover { background: #423462; }
-@media (prefers-reduced-motion: no-preference) {
-  .gift-envelope { transition: transform 220ms ease-out; }
-  @media (hover: hover) {
-    .gift-visual:hover .gift-envelope { transform: translateY(-5px) rotate(-1deg); }
-  }
-  .gift-dialog[open] { animation: gift-open 240ms ease-out; }
-  @keyframes gift-open { from { opacity: .2; transform: translateY(9px) scale(.99); } to { opacity: 1; transform: none; } }
-}
+.gift-request .gift-email:hover { background: #fff1d4; }
+.gift-request .gift-address { overflow-wrap: anywhere; }
 @media (max-width: 760px) {
   body.modern-site .gift-banner { grid-template-columns: 1.15fr .85fr; gap: 0; padding: 16px; border-radius: 26px; }
   body.modern-site .gift-banner .gift-banner-copy h2 { font-size: clamp(25px, 5.6vw, 34px); margin-bottom: 0; }
@@ -279,7 +243,4 @@ body.modern-site .gift-banner:focus-visible { outline: 3px solid #b1914a; outlin
   .gift-banner-art { width: min(100%, 340px); }
   .gift-banner-art img { width: 100%; margin: 0; }
   .gift-envelope { width: 122%; margin-inline-start: -11%; }
-  .gift-dialog { width: calc(100% - 16px); max-width: none; padding: 8px; border-radius: 16px; }
-  .gift-dialog-top { margin-bottom: 6px; }
-  .gift-dialog-bottom { justify-content: center; margin: 14px 0 6px; }
 }
