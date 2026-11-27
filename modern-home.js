@@ -1,4 +1,5 @@
 import {sessionPhoto, sessionVideo} from './media.js?v=48';
+import {heroArtwork} from './uvodni-karticky.js?v=49';
 const art='/eva-dvorakova-web/assets/illustrations/';
 function img(name,alt,cls='',eager=false){return `<img class="${cls}" src="${art+name}" alt="${alt}" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;}
 export function renderPricing({icon,id='pricing'}) {
@@ -19,13 +20,12 @@ export function gameNoticePage() {
  return `<main id="main">${gameNotice(true)}</main>`;
 }
 
-export function renderModernHome({icon, contactAvailable = false}) {
- const arrow = icon('arrow');
- const photo = sessionPhoto() || `<figure class="ed-still"><img src="${art}karticky-na-stole.webp" width="1600" height="1050" fetchpriority="high" decoding="async" alt="Obrázkové kartičky se sovou a husou na zeleném stole"></figure>`;
+export function renderModernHome({contactAvailable = false}) {
+ const photo = sessionPhoto() || heroArtwork();
  const video = sessionVideo();
  const firstLink = contactAvailable
-  ? `<a class="ed-button" href="/kontakt/" data-link>Domluvit první rozhovor ${arrow}</a>`
-  : `<a class="ed-button" href="#spoluprace">Jak probíhá první setkání ${arrow}</a>`;
+  ? `<a class="ed-button" href="/kontakt/" data-link>Domluvit první rozhovor</a>`
+  : `<a class="ed-button" href="#spoluprace">Jak probíhá první setkání</a>`;
  return `<main id="main" class="mh-home ed-home">
   <section class="ed-wrap ed-hero" aria-labelledby="ed-title">
    <div class="ed-intro"><h1 id="ed-title">Pomáhám dětem <em>rozvíjet řeč.</em></h1>
@@ -37,9 +37,9 @@ export function renderModernHome({icon, contactAvailable = false}) {
 
   <section class="ed-wrap ed-trust" id="o-eve" aria-label="Zkušenosti Evy Dvořákové">
    <dl><div><dt>34 let</dt><dd>ve speciální logopedické třídě</dd></div>
-    <div><dt>Od roku 1985</dt><dd>pracuji ve školství</dd></div>
+    <div><dt><span class="ed-since">Od roku</span> 1985</dt><dd>ve školství</dd></div>
     <div><dt>20 let</dt><dd>jsem zároveň vedla mateřskou školu</dd></div></dl>
-   <a class="ed-link" href="/o-mne/" data-link>Více o mně ${arrow}</a>
+   <a class="ed-link" href="/o-mne/" data-link>Více o mně</a>
   </section>
 
   <a class="shell ed-wrap gift-banner gift-night" id="vanocni-poukaz" href="/eva-dvorakova-web/vanocni-poukaz/" aria-label="Prohlédnout vánoční poukaz na setkání s Evou">
@@ -48,7 +48,7 @@ export function renderModernHome({icon, contactAvailable = false}) {
   </a>
 
   <section class="ed-wrap ed-section" id="spoluprace" aria-labelledby="ed-first">
-   <div class="ed-section-head"><h2 id="ed-first">Jak probíhá první setkání</h2><a class="ed-link" href="/konzultace/" data-link>Průběh a ceny ${arrow}</a></div>
+   <div class="ed-section-head"><h2 id="ed-first">Jak probíhá první setkání</h2><a class="ed-link" href="/konzultace/" data-link>Průběh a ceny</a></div>
    <ol class="ed-steps">
     <li><h3>Zavoláme si</h3><p>Řeknete mi, čeho si doma všímáte a s čím byste chtěli poradit.</p></li>
     <li><h3>Poznám Vaše dítě</h3><p>Při hře si všímám pohybu rtů a jazyka a poslouchám, které hlásky už dítě používá.</p></li>
@@ -57,17 +57,17 @@ export function renderModernHome({icon, contactAvailable = false}) {
   </section>
 
   <section class="ed-library" id="materialy" aria-labelledby="ed-materials"><div class="ed-wrap">
-   <div class="ed-section-head"><h2 id="ed-materials">Zkuste si to doma</h2><a class="ed-link" href="/materialy/" data-link>Všechny materiály ${arrow}</a></div>
+   <div class="ed-section-head"><h2 id="ed-materials">Zkuste si to doma</h2><a class="ed-link" href="/materialy/" data-link>Všechny materiály</a></div>
    <div class="ed-games">
-    <a class="ed-game ed-car" href="/auticka/" data-link><span class="ed-car-img" aria-hidden="true"></span><div><h3>Jazýčkoauto</h3><p>Kam dnes pojede jazýček?</p><span class="ed-link">Otevřít příběh ${arrow}</span></div></a>
+    <a class="ed-game ed-car" href="/auticka/" data-link><span class="ed-car-img" aria-hidden="true"></span><div><h3>Jazýčkoauto</h3><p>Kam dnes pojede jazýček?</p><span class="ed-link">Otevřít příběh</span></div></a>
     <article class="ed-game ed-owl" id="ukazka-karticky">${img('owl.webp','Sova na obrázkové kartičce')}<div><h3>Co vidíš?</h3><p>„Sovu.“</p><p>„A kde asi sedí?“</p></div></article>
    </div>
    ${video ? `<section class="ed-film"><h3>Jak si spolu hrajeme s Jazýčkoautem</h3>${video}</section>` : ''}
   </div></section>
 
   <div class="ed-wrap ed-future">
-   <section id="knizka" class="ed-edition"><div><h2>Knížka Říkám svět</h2><p>Chystáme příběhy a obrázky pro společné čtení.</p></div>${img('story-world.webp','', 'ed-book-img')}</section>
-   <section id="app-preview" class="ed-edition"><div><h2>Hra pro děti</h2><p>Aplikaci s dětskými průvodci zatím vyvíjíme.</p></div><div class="ed-guides" aria-hidden="true">${img('avatars/boy-blond-blue-mint.webp','')}${img('avatars/girl-brown-brown-purple.webp','')}</div></section>
+   <section id="knizka" class="ed-edition"><div><h2>Knížka Říkám svět</h2><p>Připravujeme obrázkové příběhy pro společné čtení.</p></div>${img('story-world.webp','', 'ed-book-img')}</section>
+   <section id="app-preview" class="ed-edition"><div><h2>Dětští průvodci</h2><p>V aplikaci, kterou vyvíjíme, si dítě vybere svého průvodce.</p></div><div class="ed-guides" aria-hidden="true">${img('avatars/boy-blond-blue-mint.webp','')}${img('avatars/girl-brown-brown-purple.webp','')}</div></section>
   </div>
  </main>`;
 }
