@@ -1,7 +1,4 @@
 /* Eviny papírové kartičky na světlém, barevném podkladu. */
-.ed-hero-art:has(.picture-pair) {
-  overflow: visible;
-}
 .picture-pair {
   position: relative;
   margin: 0;
@@ -103,3 +100,5 @@
   .picture-pair { aspect-ratio: 1.58; }
   .picture-card {padding: 1.6%;}
 }
+
+.ed-picture-game .picture-pair {border-radius:13px; box-shadow:0 4px 13px #45466612;}

@@ -49,6 +49,7 @@ body.modern-site:has(.ed-home)::before, body.modern-site:has(.ed-home)::after {d
 .ed-home a.ed-link:hover, .ed-home a.ed-game:hover .ed-link {text-decoration:underline; text-underline-offset:.24em;}
 .ed-home .ed-button:hover {background:#344790;}
 .ed-hero-art {min-width:0; border-radius:clamp(22px,2.1vw,32px);}
+body.modern-site .ed-hero-art > .mh-scene.hero-kids {width:100%; max-width:none; aspect-ratio:1.48;}
 .ed-hero-art .eva-session-photo {border:1px solid #ffffffde; box-shadow:0 14px 32px #38486917;}
 .ed-home .ed-trust {
   display:flex; align-items:center; gap:clamp(18px,2vw,34px);
@@ -95,7 +96,7 @@ body.modern-site .ed-home > .gift-banner {
   box-shadow:0 8px 20px #33446508; text-decoration:none;
 }
 .ed-car-img {display:block; width:100%; aspect-ratio:1; background:url('./assets/illustrations/auticka/atlas-1.webp') no-repeat 0 0 / 200% 400%; border-radius:12px;}
-.ed-owl > img {width:100%; max-height:150px; object-fit:contain;}
+.ed-home .ed-game.ed-picture-game {grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);}
 .ed-home .ed-game .ed-link {justify-content:flex-start; margin-top:4px;}
 .ed-film {max-width:760px; margin:36px auto 0;}
 .ed-film figure {border-radius:16px;}

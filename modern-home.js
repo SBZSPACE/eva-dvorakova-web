@@ -1,5 +1,5 @@
 import {sessionPhoto, sessionVideo} from './media.js?v=48';
-import {heroArtwork} from './uvodni-karticky.js?v=49';
+import {pictureCards} from './uvodni-karticky.js?v=50';
 const art='/eva-dvorakova-web/assets/illustrations/';
 function img(name,alt,cls='',eager=false){return `<img class="${cls}" src="${art+name}" alt="${alt}" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;}
 export function renderPricing({icon,id='pricing'}) {
@@ -21,7 +21,10 @@ export function gameNoticePage() {
 }
 
 export function renderModernHome({contactAvailable = false}) {
- const photo = sessionPhoto() || heroArtwork();
+ const photo = sessionPhoto() || `<div class="mh-scene hero-kids" role="img" aria-label="Chlapeček a holčička, ilustrovaní průvodci připravovanou aplikací">
+   <div class="hero-kid hero-boy">${img('avatars/boy-blond-blue-mint.webp','','',true)}</div>
+   <div class="hero-kid hero-girl">${img('avatars/girl-brown-brown-purple.webp','','',true)}</div>
+  </div>`;
  const video = sessionVideo();
  const firstLink = contactAvailable
   ? `<a class="ed-button" href="/kontakt/" data-link>Domluvit první rozhovor</a>`
@@ -60,7 +63,7 @@ export function renderModernHome({contactAvailable = false}) {
    <div class="ed-section-head"><h2 id="ed-materials">Zkuste si to doma</h2><a class="ed-link" href="/materialy/" data-link>Všechny materiály</a></div>
    <div class="ed-games">
     <a class="ed-game ed-car" href="/auticka/" data-link><span class="ed-car-img" aria-hidden="true"></span><div><h3>Jazýčkoauto</h3><p>Kam dnes pojede jazýček?</p><span class="ed-link">Otevřít příběh</span></div></a>
-    <article class="ed-game ed-owl" id="ukazka-karticky">${img('owl.webp','Sova na obrázkové kartičce')}<div><h3>Co vidíš?</h3><p>„Sovu.“</p><p>„A kde asi sedí?“</p></div></article>
+    <article class="ed-game ed-picture-game" id="ukazka-karticky">${pictureCards()}<div><h3>Co vidíš?</h3><p>„Sovu.“</p><p>„A kde asi sedí?“</p></div></article>
    </div>
    ${video ? `<section class="ed-film"><h3>Jak si spolu hrajeme s Jazýčkoautem</h3>${video}</section>` : ''}
   </div></section>
