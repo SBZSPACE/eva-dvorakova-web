@@ -1,0 +1,17 @@
+.eva-session-photo,
+.eva-portrait-photo,
+.eva-session-video {
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.eva-session-photo picture,
+.eva-session-photo img,
+.eva-portrait-photo img,
+.eva-session-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
