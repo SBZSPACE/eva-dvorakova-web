@@ -1,0 +1,105 @@
+/* Eviny papírové kartičky na světlém, barevném podkladu. */
+.ed-hero-art:has(.picture-pair) {
+  overflow: visible;
+}
+.picture-pair {
+  position: relative;
+  margin: 0;
+  isolation: isolate;
+  aspect-ratio: 1.51;
+  overflow: hidden;
+  border-radius: clamp(22px, 3vw, 42px);
+  border: 1px solid #fff;
+  background:
+    radial-gradient(ellipse at 98% 5%, #e4daff, transparent 62%),
+    linear-gradient(140deg, #ddebff 1%, #c3d4f4 47%, #c6b4dc 100%);
+  box-shadow: 0 21px 44px -31px #4d528199, inset 0 1px 0 #fff;
+}
+.picture-pair::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('./assets/illustrations/paper-forest.webp') center 64% / cover no-repeat;
+  opacity: .21;
+  mix-blend-mode: luminosity;
+}
+.picture-card {
+  position: absolute;
+  display: grid;
+  padding: 1.9%;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #fffefa, #fffcf6 62%, #f4efe9);
+  border-radius: 6.5% / 5%;
+  border: 1px solid rgba(255,255,255,.95);
+  box-shadow: 0 1px 0 #d3cbbf, 0 3px 1px -1px #e0d7cd, 0 7px 10px -6px #45405c66, 0 23px 28px -14px #4d476e85;
+}
+.picture-card-goose {
+  width: 40.5%;
+  height: 70%;
+  top: 10%;
+  right: 9.5%;
+  transform: rotate(9deg);
+}
+.picture-card-owl {
+  width: 41.5%;
+  height: 72%;
+  left: 11%;
+  bottom: 10.5%;
+  transform: rotate(-10deg);
+}
+.picture-card-print {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 4% / 3%;
+  isolation: isolate;
+}
+.picture-card-owl .picture-card-print {
+  background:
+    radial-gradient(ellipse 70% 42% at -10% 111%, #c4b4b6 0 96%, transparent 97%),
+    radial-gradient(ellipse 96% 50% at 96% 135%, #c8bbc6 0 96%, transparent 97%),
+    linear-gradient(155deg, #f9ece1, #ecd8d4 75%, #dfcace);
+}
+.picture-card-goose .picture-card-print {
+  background:
+    radial-gradient(ellipse 100% 53% at 107% 120%, #9abdc8 0 96%, transparent 97%),
+    radial-gradient(ellipse 75% 42% at 13% 118%, #b1cad0 0 96%, transparent 97%),
+    linear-gradient(155deg, #e2eff4, #cbdee8 70%, #bfd5df);
+}
+.picture-card-print::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 6%;
+  bottom: 11%;
+  border-radius: 50%;
+  background: #617082;
+  opacity: .18;
+  filter: blur(5px);
+}
+.picture-card-goose .picture-card-print::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  aspect-ratio: 1;
+  top: 9%;
+  right: 10%;
+  border-radius: 50%;
+  background: #fff0d5;
+}
+.picture-card-print > img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 120%;
+  max-width: none;
+  height: 86%;
+  object-fit: contain;
+}
+@media (max-width: 700px) {
+  .picture-pair { aspect-ratio: 1.58; }
+  .picture-card {padding: 1.6%;}
+}
