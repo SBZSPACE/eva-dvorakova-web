@@ -53,11 +53,11 @@ function parentNavLink([url, label]){
 }
 function header(){
  const contactLabel=config.content.contactEmail?'Domluvit rozhovor':'Kontakt';
- const links=parentNav.map(parentNavLink).join('')+`<a href="/eva-dvorakova-web/vanocni-poukaz/">Vánoční poukaz</a>`+button('/kontakt/',contactLabel);
+ const links=parentNav.map(parentNavLink).join('')+`<a href="/eva-dvorakova-web/vanocni-poukaz/">Vánoční poukaz</a>`+button('/kontakt/',contactLabel,config.content.contactEmail?'':'contact-info');
  return `<header class="site-header shell"><div class="header-row">${brand()}<nav class="desktop-nav" aria-label="Hlavní navigace">${links}</nav><button type="button" class="mobile-toggle" aria-label="${menuOpen?'Zavřít':'Otevřít'} nabídku" aria-expanded="${menuOpen}" aria-controls="mobile-menu" data-menu>${icon(menuOpen?'close':'menu')}</button></div><nav id="mobile-menu" class="mobile-menu${menuOpen?' open':''}" aria-label="Mobilní navigace">${links}</nav></header>`;
 }
 function footer(){
- return `<footer class="footer shell"><div class="footer-top">${brand()}<nav class="footer-links" aria-label="Odkazy v patičce">${parentNav.map(parentNavLink).join('')}${parentNavLink(['/kontakt/','Kontakt'])}</nav></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} Eva Dvořáková</span><span><a href="/soukromi/" data-link>Soukromí</a>${runtime.publicPreview?'':' · <a class="footer-secret" href="/admin/" data-link>Pro Evu</a>'}</span></div></footer>`;
+ return `<footer id="kontakt-doma" class="footer shell"><div class="footer-top">${brand()}<nav class="footer-links" aria-label="Odkazy v patičce">${parentNav.map(parentNavLink).join('')}${parentNavLink(['/kontakt/','Kontakt'])}</nav></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} Eva Dvořáková</span><span><a href="/soukromi/" data-link>Soukromí</a>${runtime.publicPreview?'':' · <a class="footer-secret" href="/admin/" data-link>Pro Evu</a>'}</span></div></footer>`;
 }
 function contactBand(){
  const link=config.content.contactEmail?button('/kontakt/','Domluvit rozhovor'):button('/konzultace/','První setkání');

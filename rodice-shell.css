@@ -58,6 +58,13 @@ body.modern-site .parent-page .btn {
 }
 body.modern-site .site-header .btn:hover,
 body.modern-site .parent-page .btn:hover { background: #1d347b; }
+body.modern-site .site-header .contact-info {
+  background: transparent;
+  color: var(--parent-blue);
+  border-color: #a7b3ce;
+}
+body.modern-site .site-header .contact-info:hover { background: #eef1f9; }
+body.modern-site .site-header .desktop-nav > a[aria-current]::after { content: none; }
 body.modern-site .site-header .mobile-toggle {
   color: var(--parent-blue);
   border-radius: 50%;
@@ -144,7 +151,7 @@ body.modern-site .parent-next h2 { margin: 0; }
 body.modern-site :is(.parent-contact,.parent-contact-link) { padding-bottom: clamp(48px, 7vw, 95px); }
 body.modern-site .parent-contact { min-height: 22vh; }
 body.modern-site .parent-contact p { font-size: 17px; margin: 10px 0 22px; color: var(--parent-soft); }
-body.modern-site main#main:has(.subhero) .subhero h1 {
+body.modern-site[data-page] main#main .shell .subhero h1 {
   font: 540 clamp(39px, 5.6vw, 76px)/1.12 Literata, Georgia, serif;
   color: var(--parent-ink);
   letter-spacing: -.055em;
